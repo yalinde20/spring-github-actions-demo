@@ -1,0 +1,15 @@
+name: Test du workflow
+
+on: 
+  schedule:
+    - cron: '0 * * * *'
+
+
+jobs:
+  main_job:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Afficher le message de récupération du code source
+        run: echo "Récupération du code source"
+      - name: Afficher le message de vérificaiton terminée
+        run: echo "Vérification terminée"
